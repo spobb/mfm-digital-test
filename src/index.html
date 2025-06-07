@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form MFM Digital</title>
+		<link rel="stylesheet" href="index.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body>
+		<main>
+			<img src="/public/header-img.jpg" alt="header-image" class="header-img" />
+			<div class="container">
+				<div class="side-text text-light">
+					<h2>MFM Digital</h2>
+					<p>Rue Middelbourg 66, 1170 Watermael-Boitsfort</p>
+					<p class="underlined">+32 2 880 96 92</p>
+					<p>info@mfmdigital.com</p>
+					<div class="side-links">
+						<a href="https://www.facebook.com" class="icon-link" target="_blank"><img src="/public/facebook.svg" alt="FaceBook logo" /></a>
+						<a href="https://www.linkedin.com" class="icon-link" target="_blank"><img src="/public/linkedin.svg" alt="LinkedIn logo" /></a>
+					</div>
+				</div>
+				<div class="form">
+					<div class="form-header text-light">
+						<h2>Contactez-nous</h2>
+						<p>Notre agence vous promet une expertise personnalisée et un accompagnement sur-mesure pour la réalisation de votre site internet et/ou de votre application.</p>
+					</div>
+					<div class="slide-button" id="slider">
+						<div class="active"><img src="/public/frog-head.svg" alt="frog head" class="svg" /> Crapaud</div>
+						<div><img src="/public/frog-hand.svg" alt="frog hand" class="svg" />Grenouille</div>
+					</div>
+					<form action="#">
+						<div class="form-row">
+							<div class="form-group">
+								<label for="lastName">Nom</label>
+								<input type="text" name="lastName" id="lastName" required />
+							</div>
+							<div class="form-group">
+								<label for="firstName">Prénom</label>
+								<input type="text" name="firstName" id="firstName" required />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="phone">Numéro de téléphone</label>
+							<input type="phone" name="phone" id="phone" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="form-group">
+							<label for="address">Adresse :</label>
+							<input type="text" name="address" id="address" />
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<label for="postalCode">Code Postal :</label>
+								<input type="text" name="postalCode" id="postalCode" pattern="[0-9]+" />
+							</div>
+							<div class="form-group">
+								<label for="city">Ville :</label>
+								<input type="text" name="city" id="city" />
+							</div>
+						</div>
+						<div class="form-footer">
+							<input type="checkbox" name="disclaimer" id="disclaimer" />
+							<label for="disclaimer">J'accepte que mes données soient recueillies par une famille de crapauds ou de grenouilles aux étangs d'Ixelles.</label>
+						</div>
+						<button type="submit">ENVOYER</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<script src="slider.js"></script>
+	</body>
+</html>
