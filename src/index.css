@@ -1,5 +1,13 @@
 /*
+ * J'ai utilisés des font-size différentes en fonction de différents breakpoints pour le design responsive.
+ * J'ai essayé de respecter au maximum la maquette tout en laissant une grande partie du design responsive à l'aide de rem,
+ * seules certaines valeurs sont hardcodées en pixels.
+ *
  * Helvetica de base n'a pas de font-weight en dessous de 400.
+ * J'ai donc utilisé Roboto pour la démo
+ *
+ *
+ *
  */
 /* Remettre à zéro pour simplifier les choses */
 * {
@@ -81,7 +89,6 @@ main {
     padding: 2rem 3rem 4rem;
     box-shadow: 0 4px 28px 0 #1C85A621;
     border-radius: .5rem;
-    /* 0.5rem */
     transform: translateY(-4rem);
 }
 .form-header {}
@@ -166,6 +173,9 @@ button[type=submit] {
     background: var(--main-accent);
     border-radius: 3rem;
 }
+/*
+ * Le même trick que pour le bouton slider, j'implémente ma propre input checkbox avec des pseudos élements
+ */
 input[type=checkbox] {
     appearance: none;
     position: relative;
